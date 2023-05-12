@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hangman.css">
+
+</head>
+<body>
+
+    <h1>Hangman Spiel</h1>
+
+    <h2>Klicke auf die  <details></details> hier drunter um die Anleitung für das Spiel zu lesen.</h2>
+    <h2> 
+        <details>
+            <p></p>
+            - Um einen Buchstaben einzugeben tippe mit dem Finger in ein <input type="text" value="Eingabefeld" name="" id="">
+              Eingabefeld und gebe deine Buchstaben ein und drücke auf den Button <Button>Check ?</Button> um die
+              Eingabe zuprüfen
+            <p></p>
+            - Der 1 Buchstabe des Spiel wird Groß eingegeben die anderen Buchstaben klein
+            <p></p>
+            - Wenn die Eingabe richtig ist wird das Eingabefeld <input type="text" class="input-beschreibung-green" value="Eingabefeld" > <span class="span-green" >Grün</span> , ist
+              die Eingabe falsch wird das Eingabefeld <input type="text" value="Eingabefeld" class="input-beschreibung-red" name="" id=""> <span class="span-red" >Rot</span> 
+            <p></p>
+            - Wenn deine Eingabe falsch ist, kannst du sie jederzeit korrigieren
+            <p></p>
+            - Das Spiel ist dann vorbei wenn alle Eigabefelder belegt und du alles geprüft, wenn alles richtig ist, wenn alles falsch ist oder auch wenn du etwas
+            korrigiert hast
+
+        </details>
+    </h2> 
+
+    <div class="main-div" >
+        <h3>Gebe das gesuchte Wort in die Eingabefelder <input> ein</h3>
+        <div class="input-div" >
+
+            <input type="text" id="input1" >
+            <input type="text" id="input2" >
+            <input type="text" id="input3" >
+            <input type="text" id="input4" >
+            <input type="text" id="input5" >
+            <input type="text" id="input6" >
+            <input type="text" id="input7" >
+            <input type="text" id="input8" >
+            <input type="text" id="input9" >
+            <input type="text" id="input10" >
+
+        </div>
+
+        <div class="button-div" >
+
+            <button onclick="check1()" class="button1" >Check 1</button>
+            <button onclick="check2()" class="button2" >Check 2</button>
+            <button onclick="check3()" class="button3" >Check 3</button>
+            <button onclick="check4()" class="button4" >Check 4</button>
+            <button onclick="check5()" class="button5" >Check 5</button>
+            <button onclick="check6()" class="button6" >Check 6</button>
+            <button onclick="check7()" class="button7" >Check 7</button>
+            <button onclick="check8()" class="button8" >Check 8</button>
+            <button onclick="check9()" class="button9" >Check 9</button>
+            <button onclick="check10()" class="button10" >Check 10</button>
+
+        </div>
+
+        <h2 id="out" >Ausgabe</h2>
+
+    </div>
+
+    <div class="hangman-div" >
+
+        <div class="hangman-säule" ></div>
+        <div class="hangman-balken" ></div>
+        <div class="hangman-stütze" ></div>
+        <div class="hangman-strick" ></div>
+        <div class="hangman-head" ></div>
+        <div class="hangman-body" ></div>
+        <div class="hangman-left-arm" ></div>
+        <div class="hangman-right-arm" ></div>
+        <div class="hangman-left-leg" ></div>
+        <div class="hangman-right-leg" ></div>
+
+    </div>
+
+    <script src="hangman.js"></script>
+    
+</body>
+</html>
